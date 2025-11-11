@@ -20,10 +20,12 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# 输出文件（可选，若想保留则删除这些行）
-*.csv
-*.png
-strategy_analysis_report/
+# 输出文件（已启用上传）
+# *.csv  已启用
+# *.png  已启用
+# strategy_analysis_report/  已启用
+
+# 仅忽略缓存
 __pycache__/
 
 # 本地测试文件

@@ -6,22 +6,22 @@
 import sys
 sys.path.insert(0, '.')
 
-from model_1_data_fetcher import StockDataFetcher
-from model_2_anomaly_detector import AnomalyDetector, MarketBehaviorAnalyzer
-from model_3_liquidity_manager import LiquidityManager, SpreadManager
-from model_4_risk_manager import RiskManager
-from model_5_trading_strategy import TradingStrategy
-from model_6_visualizer import StrategyVisualizer
+from 1_data_fetcher import StockDataFetcher
+from 2_anomaly_detector import AnomalyDetector, MarketBehaviorAnalyzer
+from 3_liquidity_manager import LiquidityManager, SpreadManager
+from 4_risk_manager import RiskManager
+from 5_trading_strategy import TradingStrategy
+from 6_visualizer import StrategyVisualizer
 
 try:
-    from model_7_market_regime import MarketRegimeAnalyzer, RegimeAdaptiveStrategy
-    from model_8_price_risk_zone import PriceRiskZoneManager
-    from model_9_compliant_execution import ComplianceLiquidityExecutor
-    from model_10_position_hedging import PositionHedgingManager
-    from model_11_backtest_stress_test import BacktestEngine, StressTestEngine
-    from model_12_monitoring_alerts import MonitoringSystem
+    from 7_market_regime import MarketRegimeAnalyzer, RegimeAdaptiveStrategy
+    from 8_price_risk_zone import PriceRiskZoneManager
+    from 9_compliant_execution import ComplianceLiquidityExecutor
+    from 10_position_hedging import PositionHedgingManager
+    from 11_backtest_stress_test import BacktestEngine, StressTestEngine
+    from 12_monitoring_alerts import MonitoringSystem
 except ImportError as e:
-    print(f"部分高级模块导入失败: {e}")
+    pass  # 高级模块可选
 
 
 class IntegratedTradingFramework:
